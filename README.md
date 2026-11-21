@@ -72,6 +72,23 @@ ShiftPlanner follows a frontend-backend-database architecture.
 3. **Database:** PostgreSQL stores employees, shifts, and swap requests.
 4. **Prisma ORM:** Connects the backend with PostgreSQL and manages database operations.
 
+## Screenshots
+
+### Dashboard
+![Dashboard](public/screenshots/dashboard.png.jpeg)
+
+### Employees
+![Employees](public/screenshots/employees.png.jpeg)
+
+### Weekly Schedule
+![Weekly Schedule](public/screenshots/weekly-schedule.png.jpeg)
+
+### Shift Swaps
+![Shift Swaps](public/screenshots/shift-swaps.png.jpeg)
+
+### Hours Report
+![Hours Report](public/screenshots/hours-report.png.jpeg)
+
 ## Project Structure
 
 ```text
@@ -143,19 +160,3 @@ From the `server` directory, run:
 npx prisma migrate deploy
 n
 
-## Screenshots
-
-### Dashboard
-![Dashboard](public/screenshots/dashboard.png.jpeg)
-
-### Employees
-![Employees](public/screenshots/employees.png.jpeg)
-
-### Weekly Schedule
-![Weekly Schedule](public/screenshots/weekly-schedule.png.jpeg)
-
-### Shift Swaps
-![Shift Swaps](public/screenshots/shift-swaps.png.jpeg)
-
-### Hours Report
-![Hours Report](public/screenshots/hours-report.png.jpeg)
