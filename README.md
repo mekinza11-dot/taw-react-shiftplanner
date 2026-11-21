@@ -142,3 +142,20 @@ From the `server` directory, run:
 ```bash
 npx prisma migrate deploy
 n
+
+## Screenshots
+
+### Dashboard
+![Dashboard](public/screenshots/dashboard.png.jpeg)
+
+### Employees
+![Employees](public/screenshots/employees.png.jpeg)
+
+### Weekly Schedule
+![Weekly Schedule](public/screenshots/weekly-schedule.png.jpeg)
+
+### Shift Swaps
+![Shift Swaps](public/screenshots/shift-swaps.png.jpeg)
+
+### Hours Report
+![Hours Report](public/screenshots/hours-report.png.jpeg)
