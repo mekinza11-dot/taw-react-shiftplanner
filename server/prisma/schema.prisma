@@ -1,0 +1,45 @@
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Employee {
+  id        Int      @id @default(autoincrement())
+  name      String
+  email     String   @unique
+  position  String
+  shifts    Shift[]
+  createdAt DateTime @default(now())
+}
+
+model Shift {
+  id            Int      @id @default(autoincrement())
+  employeeId    Int
+  day           String
+  startTime     String
+  endTime       String
+
+  employee      Employee @relation(fields: [employeeId], references: [id], onDelete: Cascade)
+
+  swapsAsFirst  SwapRequest[] @relation("FirstShift")
+  swapsAsSecond SwapRequest[] @relation("SecondShift")
+
+  createdAt     DateTime @default(now())
+}
+
+model SwapRequest {
+  id             Int      @id @default(autoincrement())
+  firstShiftId   Int
+  secondShiftId  Int
+  status         String   @default("Pending")
+
+  firstShift     Shift    @relation("FirstShift", fields: [firstShiftId], references: [id], onDelete: Cascade)
+  secondShift    Shift    @relation("SecondShift", fields: [secondShiftId], references: [id], onDelete: Cascade)
+
+  createdAt      DateTime @default(now())
+}
