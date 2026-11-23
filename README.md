@@ -14,6 +14,12 @@ ShiftPlanner is a web-based staff scheduling application designed for restaurant
 - Small business owners
 - Staff scheduling administrators
 
+## Project Demo
+
+Watch the ShiftPlanner demonstration:
+
+[Watch Loom Demo](https://www.loom.com/share/d11dc0c70f5b444a9d1e28ee87046e71)
+
 ## Features
 
 ### 1. Employee Management
